@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -36,3 +36,43 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: end;
+  gap: 30px;
+  max-width: 1140px;
+  margin: 133px 30px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__list {
+  max-height: 298px;
+  overflow-y: auto;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  max-width: 399px;
+  max-height: 534px;
+  gap: 26px;
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 16px;
+  max-height: 534px;
+}
+
