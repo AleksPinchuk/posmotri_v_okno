@@ -131,8 +131,8 @@ ol {
 .content__video-card-thumbnail {
   min-width: 194px;
   height: 103px;
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card-description-container {
@@ -143,7 +143,7 @@ ol {
 
 /* шаг 4 работа с текстом */
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: normal;
   font-size: 18px;
   line-height: 21.6px;
@@ -221,7 +221,7 @@ ol {
   border-bottom: 1px solid #ffffff;
   padding: 0;
   color: #ffffffb2;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
