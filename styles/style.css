@@ -59,7 +59,6 @@ ol {
   flex-wrap: wrap;
   align-content: end;
   gap: 30px;
-  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -73,22 +72,17 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 26px;
   max-height: 298px;
   overflow: hidden scroll;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: start;
   gap: 26px;
   min-width: 399px;
-  max-height: 100%;
+  min-height: 534px;
 }
 
 .result {
@@ -113,12 +107,12 @@ ol {
   object-position: center;
 }
 
-/* .content__list-item {
+.content__list-item {
   padding-bottom: 30px;
 }
 .content__list-item:last-child {
   padding-bottom: 0;
-} */
+}
 
 .content__video-card {
   display: flex;
@@ -126,6 +120,11 @@ ol {
   justify-content: space-between;
   align-items: center;
   height: 107px;
+  cursor: pointer;
+}
+
+.content__video-card:active {
+  background-color: #545050;
 }
 
 .content__video-card-thumbnail {
@@ -151,7 +150,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, Roboto, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -170,13 +169,17 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 200px;
   padding-bottom: 6px;
-  font-family: Oswald;
+  overflow: hidden;
+  font-family: Oswald, Roboto, sans-serif;
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
@@ -202,6 +205,10 @@ ol {
   gap: 5px;
   width: fit-content;
   cursor: pointer;
+}
+
+.search-form__label-text {
+line-height: 19px;
 }
 
 .search-form__checkbox {
@@ -241,12 +248,13 @@ ol {
 
 .button {
   box-sizing: border-box;
-  min-height: 34px;
   border: 1px solid #ffffff;
+  padding: 5px 0;
   color: #ffffff;
   font-family: Fira Sans Condensed;
   font-weight: bold;
   font-size: 18px;
+  line-height: 22.5px;
   text-align: center;
   background-color: transparent;
   cursor: pointer;
