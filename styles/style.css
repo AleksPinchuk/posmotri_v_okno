@@ -17,7 +17,7 @@ html {
   margin: auto;
   overflow: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Inter, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -183,7 +183,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", Inter, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 16.2px;
@@ -251,7 +251,7 @@ line-height: 19px;
   border: 1px solid #ffffff;
   padding: 5px 0;
   color: #ffffff;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", Inter, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22.5px;
